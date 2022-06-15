@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1_JS</title>
+</head>
+<body>
+	<h1 style="text-align: center; margin:0">Presioná el botón para iniciar el programa</h1>
+	<div class="container" style="display:flex; justify-content: center; align-items: center">
+		<button type="button" name="button" style="background:darkcyan;color:white;padding: 20px 20px;border:none;border-radius: 5px;margin-top: 50px" onclick="solicitar()">Iniciar Función</button>
+	</div>
+
+	<script type="text/javascript">
+		function solicitar(){
+			do{
+				var distancia;
+				distancia=prompt("Escribe un valor de distancia entero positivo");
+				distancia=parseInt(distancia);
+				
+				if(distancia>=0){
+					if(distancia<=1000){
+						alert("Si la distancia es: "+distancia+", el medio de transporte más adecuado es: A PIE.");
+					}
+					else{
+						if(distancia<=10000){
+							alert("Si la distancia es: "+distancia+", el medio de transporte más adecuado es: BICICLETA.");
+						}
+						else{
+							if(distancia<=30000){
+								alert("Si la distancia es: "+distancia+", el medio de transporte más adecuado es: COLECTIVO.");
+							}
+							else{ 
+								if(distancia<=100000){
+									alert("Si la distancia es: "+distancia+", el medio de transporte más adecuado es: AUTOMÓVIL.");
+								}
+								else{
+									if(distancia>100000){
+										alert("Si la distancia es: "+distancia+", el medio de transporte más adecuado es: AVIÓN.");
+									}
+								}	
+							}
+						}
+					}
+				}
+				else{
+					if(distancia<0){
+						alert("Escribe un valor de distancia mayor que cero");
+					}
+				}
+			}	
+			while(distancia!=undefined);
+		}
+	</script>
+</body>
+</html>
+
+					
