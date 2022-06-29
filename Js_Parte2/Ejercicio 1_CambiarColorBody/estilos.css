@@ -1,0 +1,40 @@
+#cuadrados h1, h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300px;
+	text-align: center;
+	margin:0;
+	padding-bottom: 50px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+button{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	border:none;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	margin: 20px 50px;
+	cursor: pointer;
+}
+
+.btn1{
+	background-color: #ff0000;
+}
+
+.btn2{
+	background-color: #00ff00;
+}
+
+.btn3{
+	background-color: #0000ff;
+}

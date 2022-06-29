@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+	<title>EjercicioJS_CambiarColorFondo</title>
+</head>
+<body>
+	<section id="cuadrados">
+		<h1>Cambiando color de fondo con Javascript</h1>
+		<h2>Presiona cada cuadro para cambiar el color del fondo del documento.</h2>
+		<div class="container">
+			<button id="cambiafindo1" onclick="cambiarfondobodyrojo()" class="btn1">Rojo</button>
+			<button id="cambiafindo2" onclick="cambiarfondobodyverde()" class="btn2">Verde</button>
+			<button id="cambiafindo3" onclick="cambiarfondobodyazul()" class="btn3">Azul</button>	
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		function cambiarfondobodyrojo() {
+		let body= document.getElementsByTagName('body')[0];
+		body.style.backgroundColor= '#FF0000';
+		}
+
+		function cambiarfondobodyverde() {
+		let body= document.getElementsByTagName('body')[0];
+		body.style.backgroundColor= '#00FF00';
+		}
+
+		function cambiarfondobodyazul() {
+		let body= document.getElementsByTagName('body')[0];
+		body.style.backgroundColor= '#0000FF';
+		}
+
+	</script>
+</body>
+</html>
+
+					
